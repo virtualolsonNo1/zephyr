@@ -1,0 +1,17 @@
+description: i.Testing some leds
+
+compatible: "test-leds"
+
+include: [uart-controller.yaml, base.yaml]
+
+
+properties:
+  gpios:
+    type: phandle-array
+    description: GPIO pins associated with controlling external LEDs
+    required: true
+
+  access:
+    type: int
+    description: testing
+    required: true
