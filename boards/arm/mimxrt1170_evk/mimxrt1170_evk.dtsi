@@ -44,6 +44,12 @@
 			pwms = <&flexpwm1_pwm2 0 PWM_MSEC(20) PWM_POLARITY_NORMAL>;
 		};
 	};
+
+	testleds {
+		compatible = "test-leds";
+		gpios = <&gpio9 13 GPIO_ACTIVE_HIGH>, <&gpio9 04 GPIO_ACTIVE_HIGH>;
+		access = <2>;
+	};
 };
 
 &lpi2c5 {
